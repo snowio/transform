@@ -7,5 +7,5 @@ cache:
 before_script:
   - composer install --no-interaction --dev --working-dir=code
 script:
-  - php vendor/bin/phpunit --configuration=code/phpunit.xml --coverage-clover=coverage.xml
+  - php vendor/bin/phpunit --configuration=phpunit.xml --coverage-clover=coverage.xml
 after_success: bash <(curl -s https://codecov.io/bash)
