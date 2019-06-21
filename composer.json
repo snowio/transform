@@ -1,17 +1,17 @@
 {
-    "name": "joshdifabio/transform",
+    "name": "snowio/transform",
     "require-dev": {
         "phpunit/phpunit": "^6.4"
     },
     "autoload": {
         "psr-4": {
-            "Joshdifabio\\Transform\\": "src"
+            "SnowIO\\Transform\\": "src"
         },
         "files": ["src/functions.php"]
     },
     "autoload-dev": {
         "psr-4": {
-            "Joshdifabio\\Transform\\Test\\": "tests"
+            "SnowIO\\Transform\\Test\\": "tests"
         }
     }
 }
