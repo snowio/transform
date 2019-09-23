@@ -41,6 +41,18 @@ final class CoGbkResult
         return $this->valuesPerCollection[$collectionKey][0] ?? null;
     }
 
+    public function getAllItems()
+    {
+        $result = [];
+        foreach ($this->valuesPerCollection as $collection) {
+            foreach ($collection as $item) {
+                $result[] = $item;
+            }
+        }
+
+        return $result;
+    }
+
     private $valuesPerCollection = [];
 
     private function __construct()
